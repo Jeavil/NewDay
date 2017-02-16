@@ -9,8 +9,8 @@
 import UIKit
 
 struct WeatherModel {
-    let city: String = ""
-    let weather: String = ""
-    let temperature: String = ""
-    let humidity: String = ""
+    let city: String
+    let weather: String
+    let temperature: Float
+    let humidity: Float
 }

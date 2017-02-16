@@ -17,6 +17,37 @@ class WeatherDetailView: UIView {
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var airQualityLabel: UILabel!
     
+    var city: String? {
+        didSet {
+            self.cityLabel.text = city
+        }
+    }
+    
+    var temperature: String? {
+        didSet {
+            self.temperatureLabel.text = temperature
+        }
+    }
+    
+    var date: String? {
+        didSet {
+            self.dateLabel.text = date
+        }
+    }
+    
+    var weather: String? {
+        didSet {
+            self.weatherLabel.text = weather
+        }
+    }
+    
+    var airQuality: String? {
+        didSet {
+            self.airQualityLabel.text = airQuality
+        }
+    }
+
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -24,51 +55,5 @@ class WeatherDetailView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
-    var city: NSString? {
-        get{
-        return self.cityLabel.text as NSString?
-        }
-        set {
-        self.cityLabel.text = newValue as String?;
-        }
-    }
-    
-    var temperature: NSString? {
-        get {
-            return self.temperatureLabel.text as NSString?
-        }
-        set {
-            self.temperatureLabel.text = newValue as String?
-        }
-    }
-    
-    var date:NSString? {
-        get {
-            return self.dateLabel.text as NSString?
-        }
-        set{
-            self.dateLabel.text = newValue as String?;
-        }
-    }
-    
-    var weather:NSString? {
-        get {
-            return self.weatherLabel.text as NSString?
-        }
-        set {
-            self.weatherLabel.text = newValue as String?
-        }
-    }
-    
-    var airQuality:NSString? {
-        get {
-            return self.airQualityLabel.text as NSString?
-        }
-        set {
-            self.airQualityLabel.text = newValue as String?
-        }
-    }
-
     
 }

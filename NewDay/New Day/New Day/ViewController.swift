@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.weatherView = Bundle.main.loadNibNamed("WeatherDetailView", owner: self, options: nil)?[0] as! WeatherDetailView
+        self.weatherView = Bundle.main.loadNibNamed("WeatherDetailView", owner: self, options: nil)?.first as! WeatherDetailView
         self.topContainerHeightContraint.constant = self.view.frame.width * 0.5866
         self.topContainer.addSubview(self.weatherView)
         
-        self.playerView = Bundle.main.loadNibNamed("MusicPlayerView", owner:self,options:nil)?[0] as! MusicPlayerView
+        self.playerView = Bundle.main.loadNibNamed("MusicPlayerView", owner:self,options:nil)?.first as! MusicPlayerView
         self.bottomView.addSubview(self.playerView)
         
        
