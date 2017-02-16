@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicPlayerView" customModule="New_Day" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MusicPlayerView" customModule="New_Day" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_main_shdow" translatesAutoresizingMaskIntoConstraints="NO" id="L6K-HU-eS9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLd-Zc-6B1">
+                    <rect key="frame" x="30" y="38" width="315" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n68-Se-ASd">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="76M-mQ-gIY"/>
+                                <constraint firstAttribute="width" constant="20" id="GbJ-Dj-IGU"/>
+                            </constraints>
+                            <state key="normal" image="icon_music_pause"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Bad Handsome Man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDe-yX-HMK">
+                            <rect key="frame" x="25" y="0.0" width="290" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sue-0h-29g">
+                            <rect key="frame" x="0.0" y="38" width="315" height="2"/>
+                            <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="LP3-4f-FxT"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ies-8N-YQ8">
+                            <rect key="frame" x="283.5" y="52" width="31.5" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-hD-Nsd">
+                            <rect key="frame" x="0.0" y="52" width="31.5" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.37095760576617265" blue="0.58633531615608403" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="n68-Se-ASd" firstAttribute="leading" secondItem="sLd-Zc-6B1" secondAttribute="leading" id="0hu-sU-URg"/>
+                        <constraint firstItem="sue-0h-29g" firstAttribute="top" secondItem="n68-Se-ASd" secondAttribute="bottom" constant="12" id="7xO-Km-fa8"/>
+                        <constraint firstItem="ies-8N-YQ8" firstAttribute="top" secondItem="sue-0h-29g" secondAttribute="bottom" constant="12" id="9lV-bJ-cKp"/>
+                        <constraint firstItem="n68-Se-ASd" firstAttribute="top" secondItem="sLd-Zc-6B1" secondAttribute="top" id="9mM-gb-Bj1"/>
+                        <constraint firstItem="cfO-hD-Nsd" firstAttribute="top" secondItem="sue-0h-29g" secondAttribute="bottom" constant="12" id="J1L-aa-1n4"/>
+                        <constraint firstAttribute="trailing" secondItem="sue-0h-29g" secondAttribute="trailing" id="Jw6-jm-M5x"/>
+                        <constraint firstAttribute="height" constant="70" id="Nus-gt-PAJ"/>
+                        <constraint firstItem="cfO-hD-Nsd" firstAttribute="leading" secondItem="sLd-Zc-6B1" secondAttribute="leading" id="U7Z-Wx-SzX"/>
+                        <constraint firstItem="aDe-yX-HMK" firstAttribute="leading" secondItem="n68-Se-ASd" secondAttribute="trailing" constant="5" id="fl6-NX-7mU"/>
+                        <constraint firstItem="sue-0h-29g" firstAttribute="leading" secondItem="sLd-Zc-6B1" secondAttribute="leading" id="q8R-hd-0Q4"/>
+                        <constraint firstItem="aDe-yX-HMK" firstAttribute="top" secondItem="sLd-Zc-6B1" secondAttribute="top" id="rkc-MN-okX"/>
+                        <constraint firstAttribute="trailing" secondItem="ies-8N-YQ8" secondAttribute="trailing" id="sEy-Rd-6OV"/>
+                        <constraint firstAttribute="trailing" secondItem="aDe-yX-HMK" secondAttribute="trailing" id="sbE-15-VCj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sLd-Zc-6B1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="4TG-Za-sif"/>
+                <constraint firstAttribute="bottom" secondItem="sLd-Zc-6B1" secondAttribute="bottom" constant="40" id="ASe-5g-BQS"/>
+                <constraint firstAttribute="bottom" secondItem="L6K-HU-eS9" secondAttribute="bottom" id="B1e-BV-RnZ"/>
+                <constraint firstItem="L6K-HU-eS9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DsB-BF-kW4"/>
+                <constraint firstAttribute="trailing" secondItem="sLd-Zc-6B1" secondAttribute="trailing" constant="30" id="ciz-mh-TZK"/>
+                <constraint firstAttribute="trailing" secondItem="L6K-HU-eS9" secondAttribute="trailing" id="hKb-66-MG7"/>
+                <constraint firstItem="L6K-HU-eS9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sks-Mj-vHz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="durationLabel" destination="ies-8N-YQ8" id="E2e-Qr-G9H"/>
+                <outlet property="playButton" destination="n68-Se-ASd" id="s8b-Db-ny3"/>
+                <outlet property="playerView" destination="sLd-Zc-6B1" id="R9j-eC-33P"/>
+                <outlet property="progressView" destination="sue-0h-29g" id="3IJ-cF-cH9"/>
+                <outlet property="songNameLabel" destination="aDe-yX-HMK" id="rbm-EQ-Yen"/>
+                <outlet property="startTimeLabel" destination="cfO-hD-Nsd" id="RuA-41-wdG"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="81"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom_main_shdow" width="373" height="199"/>
+        <image name="icon_music_pause" width="24" height="28"/>
+    </resources>
+</document>
