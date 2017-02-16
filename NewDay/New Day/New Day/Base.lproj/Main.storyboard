@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_afternoon" translatesAutoresizingMaskIntoConstraints="NO" id="SjJ-mn-CDd">
-                                        <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="01e-cz-4vX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -47,7 +47,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="SjJ-mn-CDd" secondAttribute="bottom" constant="1" id="6bT-ye-CFm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SjJ-mn-CDd" secondAttribute="bottom" id="6bT-ye-CFm"/>
                                     <constraint firstItem="SjJ-mn-CDd" firstAttribute="leading" secondItem="6Hp-FE-2HO" secondAttribute="leading" id="Ae4-9c-f0U"/>
                                     <constraint firstItem="SjJ-mn-CDd" firstAttribute="top" secondItem="6Hp-FE-2HO" secondAttribute="top" constant="-1" id="N5k-XO-dyd"/>
                                     <constraint firstAttribute="trailing" secondItem="ezZ-Ek-hVa" secondAttribute="trailing" id="RnZ-bR-f4Q"/>
