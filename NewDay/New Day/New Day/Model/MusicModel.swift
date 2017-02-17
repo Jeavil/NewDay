@@ -10,9 +10,9 @@ import Foundation
 
 struct MusicModel {
     
-    let name : String = ""
-    let link: String = ""
-    let duration: String = ""
-    let backgroundImgUrl : String = ""
+    let name : String
+    let link: String
+    let duration: Int
+    let backgroundImgUrl : URL
     
 }

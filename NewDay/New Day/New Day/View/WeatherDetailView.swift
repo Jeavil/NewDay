@@ -27,10 +27,10 @@ class WeatherDetailView: UIView {
     
     var city: NSString? {
         get{
-        return self.cityLabel.text as NSString?
+            return self.cityLabel.text as NSString?
         }
         set {
-        self.cityLabel.text = newValue as String?;
+            self.cityLabel.text = newValue as String?;
         }
     }
     
