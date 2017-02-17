@@ -14,8 +14,9 @@
 		9518BE1F1E55994800865440 /* WeatherDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9518BE1E1E55994800865440 /* WeatherDetailView.xib */; };
 		9518BE2A1E55B5E500865440 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518BE291E55B5E500865440 /* WeatherModel.swift */; };
 		9518BE2C1E55B8E500865440 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518BE2B1E55B8E500865440 /* MusicModel.swift */; };
+		9518BE351E55BB0E00865440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518BE341E55BB0E00865440 /* ViewController.swift */; };
+		9518BE381E55BB5D00865440 /* LocaionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518BE371E55BB5D00865440 /* LocaionManager.swift */; };
 		9573CF8E1E533033005DB358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573CF8D1E533033005DB358 /* AppDelegate.swift */; };
-		9573CF901E533033005DB358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573CF8F1E533033005DB358 /* ViewController.swift */; };
 		9573CF931E533033005DB358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9573CF911E533033005DB358 /* Main.storyboard */; };
 		9573CF981E533033005DB358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9573CF961E533033005DB358 /* LaunchScreen.storyboard */; };
 		9573CFA31E533033005DB358 /* New_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573CFA21E533033005DB358 /* New_DayTests.swift */; };
@@ -47,9 +48,10 @@
 		9518BE1E1E55994800865440 /* WeatherDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherDetailView.xib; path = View/WeatherDetailView.xib; sourceTree = "<group>"; };
 		9518BE291E55B5E500865440 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModel.swift; path = Model/WeatherModel.swift; sourceTree = "<group>"; };
 		9518BE2B1E55B8E500865440 /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicModel.swift; path = Model/MusicModel.swift; sourceTree = "<group>"; };
+		9518BE341E55BB0E00865440 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		9518BE371E55BB5D00865440 /* LocaionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaionManager.swift; sourceTree = "<group>"; };
 		9573CF8A1E533033005DB358 /* New Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9573CF8D1E533033005DB358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9573CF8F1E533033005DB358 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9573CF921E533033005DB358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9573CF971E533033005DB358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9573CF991E533033005DB358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 		9518BE261E55AD5300865440 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9573CF8F1E533033005DB358 /* ViewController.swift */,
+				9518BE341E55BB0E00865440 /* ViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -120,6 +122,24 @@
 				9518BE2B1E55B8E500865440 /* MusicModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9518BE331E55BACE00865440 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				9518BE371E55BB5D00865440 /* LocaionManager.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		9518BE361E55BB1F00865440 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9573CF991E533033005DB358 /* Info.plist */,
+				9573CF961E533033005DB358 /* LaunchScreen.storyboard */,
+				9573CF911E533033005DB358 /* Main.storyboard */,
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 		9573CF811E533033005DB358 = {
@@ -146,13 +166,12 @@
 		9573CF8C1E533033005DB358 /* New Day */ = {
 			isa = PBXGroup;
 			children = (
+				9518BE251E55AD2500865440 /* AppDelegate */,
+				9518BE331E55BACE00865440 /* Commons */,
 				9518BE281E55B59A00865440 /* Model */,
 				9518BE271E55AD6100865440 /* View */,
 				9518BE261E55AD5300865440 /* ViewController */,
-				9518BE251E55AD2500865440 /* AppDelegate */,
-				9573CF911E533033005DB358 /* Main.storyboard */,
-				9573CF961E533033005DB358 /* LaunchScreen.storyboard */,
-				9573CF991E533033005DB358 /* Info.plist */,
+				9518BE361E55BB1F00865440 /* SupportFiles */,
 			);
 			path = "New Day";
 			sourceTree = "<group>";
@@ -315,9 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9518BE1B1E55905600865440 /* WeatherDetailView.swift in Sources */,
+				9518BE381E55BB5D00865440 /* LocaionManager.swift in Sources */,
 				9518BE171E557CD500865440 /* MusicPlayerView.swift in Sources */,
-				9573CF901E533033005DB358 /* ViewController.swift in Sources */,
 				9573CF8E1E533033005DB358 /* AppDelegate.swift in Sources */,
+				9518BE351E55BB0E00865440 /* ViewController.swift in Sources */,
 				9518BE2A1E55B5E500865440 /* WeatherModel.swift in Sources */,
 				9518BE2C1E55B8E500865440 /* MusicModel.swift in Sources */,
 			);
