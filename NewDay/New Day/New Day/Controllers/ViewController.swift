@@ -13,8 +13,8 @@ class ViewController: UIViewController,LocationManagerDelegate {
 
     var playerView:UIView!
     var weatherView:UIView!
-    var locationManager: LocationManager!
-    var networkService: NetworkService!
+    var locationManager: LocationManager?
+    var networkService: NetworkService?
     
     @IBOutlet weak var ContainerView: UIView!
     @IBOutlet weak var bgImgView: UIImageView!
@@ -39,15 +39,17 @@ class ViewController: UIViewController,LocationManagerDelegate {
         self.bottomView.addSubview(self.playerView)
         
         locationManager = LocationManager()
-        locationManager.delegate = self;
-        locationManager.requestLocation();
+        locationManager?.delegate = self
+        locationManager?.requestLocation()
+        
+        networkService = NetworkService()
     }
     
     // LocationManagerDelegate
     func locationDidUpdate(location: CLLocation) {
         print("user location ---> \(location)");
-        if (location.coordinate.latitude != 0 && location.coordinate.longitude != 0){
-            networkService.requestSpecificCity(location)
+        if(location.coordinate.latitude != 0  && location.coordinate.longitude != 0 ){
+            networkService?.requestSpecificCity(location)
         }
     }
     

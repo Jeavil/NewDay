@@ -40,12 +40,12 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
         print("location = \(location)")
-        delegate?.locationDidUpdate(location: location)
+            delegate?.locationDidUpdate(location: location)
         }
     }
     
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+        print("error--->\(error)")
     }
 }

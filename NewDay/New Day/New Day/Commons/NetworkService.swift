@@ -26,7 +26,7 @@ class NetworkService: NSObject {
                     print("Isn't a vaild json object");
                     return
                 }
-               let jsonObj: AnyObject! = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as AnyObject!
+               let jsonObj: AnyObject! = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as AnyObject!
                 print("Json Object ===>> \(jsonObj)")
             }
         }
