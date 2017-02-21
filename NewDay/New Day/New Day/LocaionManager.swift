@@ -9,18 +9,29 @@
 import Foundation
 import CoreLocation
 
+protocol LocationManagerDelegate {
+    func locationDidUpdate(location:CLLocation)
+}
+
 class LocationManager: NSObject,CLLocationManagerDelegate {
+    
+    var delegate: LocationManagerDelegate?
+    
     private let locationManger = CLLocationManager()
     
     override init() {
         super.init()
         locationManger.delegate = self
         locationManger.desiredAccuracy = kCLLocationAccuracyBest
+        let status = CLLocationManager.authorizationStatus();
+        if status == CLAuthorizationStatus.notDetermined {
+            locationManger.requestAlwaysAuthorization()
+            locationManger.requestWhenInUseAuthorization()
+        }
     }
     
     
     func requestLocation() {
-        locationManger.requestWhenInUseAuthorization()
         locationManger.requestLocation()
     }
     
@@ -29,6 +40,7 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
         print("location = \(location)")
+        delegate?.locationDidUpdate(location: location)
         }
     }
     

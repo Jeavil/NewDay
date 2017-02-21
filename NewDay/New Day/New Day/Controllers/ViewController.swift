@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,LocationManagerDelegate {
 
     var playerView:UIView!
     var weatherView:UIView!
+    var locationManager: LocationManager!
+    var networkService: NetworkService!
     
     @IBOutlet weak var ContainerView: UIView!
     @IBOutlet weak var bgImgView: UIImageView!
     @IBOutlet weak var topContainerHeightContraint: NSLayoutConstraint!
     @IBOutlet weak var topContainer: UIView!
     @IBOutlet weak var bottomView: UIView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+       
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +38,23 @@ class ViewController: UIViewController {
         self.playerView = Bundle.main.loadNibNamed("MusicPlayerView", owner:self,options:nil)?.first as! MusicPlayerView
         self.bottomView.addSubview(self.playerView)
         
-       
+        locationManager = LocationManager()
+        locationManager.delegate = self;
+        locationManager.requestLocation();
     }
-
-    override func viewDidLayoutSubviews() {
+    
+    // LocationManagerDelegate
+    func locationDidUpdate(location: CLLocation) {
+        print("user location ---> \(location)");
+        if (location.coordinate.latitude != 0 && location.coordinate.longitude != 0){
+            networkService.requestSpecificCity(location)
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
 
 }
 

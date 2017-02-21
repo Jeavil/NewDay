@@ -21,6 +21,8 @@
 		9573CF981E533033005DB358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9573CF961E533033005DB358 /* LaunchScreen.storyboard */; };
 		9573CFA31E533033005DB358 /* New_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573CFA21E533033005DB358 /* New_DayTests.swift */; };
 		9573CFAE1E533033005DB358 /* New_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573CFAD1E533033005DB358 /* New_DayUITests.swift */; };
+		95E98D131E5C187E003DAB16 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E98D121E5C187E003DAB16 /* NetworkService.swift */; };
+		95E98D1B1E5C2857003DAB16 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E98D1A1E5C2857003DAB16 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		9573CFA91E533033005DB358 /* New DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "New DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9573CFAD1E533033005DB358 /* New_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_DayUITests.swift; sourceTree = "<group>"; };
 		9573CFAF1E533033005DB358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E98D121E5C187E003DAB16 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Commons/NetworkService.swift; sourceTree = "<group>"; };
+		95E98D1A1E5C2857003DAB16 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityModel.swift; path = Model/CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			children = (
 				9518BE291E55B5E500865440 /* WeatherModel.swift */,
 				9518BE2B1E55B8E500865440 /* MusicModel.swift */,
+				95E98D1A1E5C2857003DAB16 /* CityModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9518BE371E55BB5D00865440 /* LocaionManager.swift */,
+				95E98D121E5C187E003DAB16 /* NetworkService.swift */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -335,11 +341,13 @@
 			files = (
 				9518BE1B1E55905600865440 /* WeatherDetailView.swift in Sources */,
 				9518BE381E55BB5D00865440 /* LocaionManager.swift in Sources */,
+				95E98D131E5C187E003DAB16 /* NetworkService.swift in Sources */,
 				9518BE171E557CD500865440 /* MusicPlayerView.swift in Sources */,
 				9573CF8E1E533033005DB358 /* AppDelegate.swift in Sources */,
 				9518BE351E55BB0E00865440 /* ViewController.swift in Sources */,
 				9518BE2A1E55B5E500865440 /* WeatherModel.swift in Sources */,
 				9518BE2C1E55B8E500865440 /* MusicModel.swift in Sources */,
+				95E98D1B1E5C2857003DAB16 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
