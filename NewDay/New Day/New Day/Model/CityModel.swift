@@ -9,8 +9,8 @@
 import Foundation
 
 struct CityModel {
-    let city : String
-    let country: String
-    let district: String
-    let township : String
+    var city : String
+    var country: String
+    var district: String
+    var township : String
 }
