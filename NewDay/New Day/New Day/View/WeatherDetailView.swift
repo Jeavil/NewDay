@@ -29,12 +29,6 @@ class WeatherDetailView: UIView {
         }
     }
     
-    var date: String? {
-        didSet {
-            self.dateLabel.text = date
-        }
-    }
-    
     var weather: String? {
         didSet {
             self.weatherLabel.text = weather
