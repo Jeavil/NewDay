@@ -49,7 +49,9 @@ class ViewController: UIViewController,LocationManagerDelegate {
     func locationDidUpdate(location: CLLocation) {
         print("user location ---> \(location)");
         if(location.coordinate.latitude != 0  && location.coordinate.longitude != 0 ){
-            networkService?.requestSpecificCity(location)
+            networkService?.requestSpecificCity(location) { cityModel in
+                
+            }
         }
     }
     

@@ -11,9 +11,8 @@ import CoreLocation
 
 class NetworkService: NSObject {
     
-    var cityModel: CityModel?
     
-    func requestSpecificCity(_ location:CLLocation) {
+    func requestSpecificCity(_ location:CLLocation, completionHanler: @escaping (CityModel) -> Void) {
         let latitude = location.coordinate.latitude
         let longtitude = location.coordinate.longitude
         
@@ -22,23 +21,22 @@ class NetworkService: NSObject {
         let configuration = URLSessionConfiguration.default
         let session  = URLSession(configuration:configuration)
         let task = session.dataTask(with: request) { (_ data:Data?, _ response:URLResponse?, _ error:Error?) in
-            var city = ["city":"成都"]
             if error == nil {
-                if (!JSONSerialization.isValidJSONObject(city)) {
-                    print("Isn't a vaild json object");
-                    return
-                }
-               let jsonObj: NSDictionary! = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! NSDictionary
+//                if (!JSONSerialization.isValidJSONObject(city)) {
+//                    print("Isn't a vaild json object");
+//                    return
+//                }
+                let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! [String: AnyObject]
                 print("Json Object ===>> \(jsonObj)")
-                let cityModel = CityModel()
-            
+                let cityModel = CityModel(fromDictionary: jsonObj ?? [:])
+                completionHanler(cityModel)
             }
         }
         task.resume()
     }
     
     
-    func requestWeatherInfo(_ city:String) -> WeatherModel {
-        
-    }
+//    func requestWeatherInfo(_ city:String) -> WeatherModel {
+//        
+//    }
 }
