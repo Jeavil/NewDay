@@ -10,8 +10,18 @@ import UIKit
 
 struct WeatherModel {
 
-    var city: String
-    var weather: String
-    var temperature: String
-    var humidity: String
+    let city: String
+    let weather: String
+    let temperature: String
+    let humidity: String
+    let lives: Array<Any>
+    
+    init(fromDictionary dictionary: [String: AnyObject]) {
+        lives = dictionary["lives"] as? Array ?? []
+        let weatherObj = lives.first as! NSDictionary
+        weather = weatherObj["weather"] as? String ?? ""
+        city = weatherObj["city"] as? String ?? ""
+        temperature = weatherObj["temperature"] as? String ?? ""
+        humidity = weatherObj["humidity"] as? String ?? ""
+    }
 }

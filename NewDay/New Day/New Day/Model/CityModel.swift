@@ -13,11 +13,14 @@ struct CityModel {
     let country: String
     let district: String
     let township : String
+    let regeocode: NSDictionary
     
     init(fromDictionary dictionary: [String: AnyObject]) {
-        city = dictionary["city"] as? String ?? ""
-        country = dictionary["country"] as? String ?? ""
-        district = dictionary["district"] as? String ?? ""
-        township = dictionary["township"] as? String ?? ""
+        regeocode = dictionary["regeocode"] as! NSDictionary
+        let addressComponent = regeocode["addressComponent"] as! NSDictionary
+        city = addressComponent["city"] as? String ?? ""
+        country = addressComponent["country"] as? String ?? ""
+        district = addressComponent["district"] as? String ?? ""
+        township = addressComponent["township"] as? String ?? ""
     }
 }

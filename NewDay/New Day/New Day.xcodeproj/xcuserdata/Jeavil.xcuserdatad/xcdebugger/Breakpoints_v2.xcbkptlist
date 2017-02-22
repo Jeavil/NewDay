@@ -10,13 +10,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "New Day/Commons/NetworkService.swift"
-            timestampString = "509360110.798973"
+            timestampString = "509424721.726378"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "requestSpecificCity(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "requestWeatherInfo(_:completionHandle:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "New Day/Controllers/ViewController.swift"
+            timestampString = "509426418.98165"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "locationDidUpdate(location:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "New_Day.ViewController.(locationDidUpdate (location : __ObjC.CLLocation) -&gt; ()).(closure #1)"
+                  moduleName = "New Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moon/Desktop/NewDay/NewDay/New%20Day/New%20Day/Controllers/ViewController.swift"
+                  timestampString = "509426420.075703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "New_Day.ViewController.(locationDidUpdate (location : __ObjC.CLLocation) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "New Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moon/Desktop/NewDay/NewDay/New%20Day/New%20Day/Controllers/ViewController.swift"
+                  timestampString = "509426420.077202"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
