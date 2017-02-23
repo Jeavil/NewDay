@@ -18,7 +18,7 @@ struct WeatherModel {
     
     init(fromDictionary dictionary: [String: AnyObject]) {
         lives = dictionary["lives"] as? Array ?? []
-        let weatherObj = lives.first as! NSDictionary
+        let weatherObj = lives.first as? [String:AnyObject] ?? [:]
         weather = weatherObj["weather"] as? String ?? ""
         city = weatherObj["city"] as? String ?? ""
         temperature = weatherObj["temperature"] as? String ?? ""

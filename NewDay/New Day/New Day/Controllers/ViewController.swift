@@ -49,12 +49,14 @@ class ViewController: UIViewController,LocationManagerDelegate {
     func locationDidUpdate(location: CLLocation) {
         if(location.coordinate.latitude != 0  && location.coordinate.longitude != 0 ){
             networkService?.requestSpecificCity(location) { cityModel in
-                let city = cityModel.city 
-                self.networkService?.requestWeatherInfo(city) { weatherModel in
+                self.networkService?.requestWeatherInfo(cityModel.city) { weatherModel in
                      print("------>\(weatherModel)")
                 }
             }
         }
+    }
+    
+    func updateUserInterface(_ weatherInfo: WeatherModel) {
     }
     
     override func didReceiveMemoryWarning() {

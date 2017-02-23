@@ -38,10 +38,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-Ek-hVa" userLabel="BottomContainer">
-                                        <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="537" width="375" height="130"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="4y1-wu-ES0"/>
+                                            <constraint firstAttribute="height" constant="130" id="4y1-wu-ES0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
