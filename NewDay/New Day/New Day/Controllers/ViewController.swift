@@ -62,7 +62,7 @@ class ViewController: UIViewController,LocationManagerDelegate {
         self.weatherView.weatherStackView.isHidden = false
         self.weatherView.weatherLabel.text = weatherInfo.weather
         self.weatherView.cityLabel.text = weatherInfo.city
-        self.weatherView.temperatureLabel.text = weatherInfo.temperature + " " + "℃"
+        self.weatherView.temperature = weatherInfo.temperature + " " + "℃"
         self.weatherView.humidityLabel.text = "湿度" + "  " + weatherInfo.humidity
         var weatherIconName: String = ""
         weatherIconName = self.getWeatherIcon(weatherInfo.weather)

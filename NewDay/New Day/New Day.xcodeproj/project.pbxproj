@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719B147B1E65B1F800FCDC56 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B147A1E65B1F800FCDC56 /* String+Extension.swift */; };
+		719B147D1E65B56000FCDC56 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B147C1E65B56000FCDC56 /* Server.swift */; };
+		719B147F1E65BB6300FCDC56 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B147E1E65BB6300FCDC56 /* WeatherAPI.swift */; };
 		950816761E54497E00668F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950816751E54497E00668F23 /* Assets.xcassets */; };
 		9518BE171E557CD500865440 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518BE161E557CD500865440 /* MusicPlayerView.swift */; };
 		9518BE191E557CEA00865440 /* MusicPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9518BE181E557CEA00865440 /* MusicPlayerView.xib */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		719B147A1E65B1F800FCDC56 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		719B147C1E65B56000FCDC56 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		719B147E1E65BB6300FCDC56 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		950816751E54497E00668F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "New Day/Assets.xcassets"; sourceTree = "<group>"; };
 		9518BE161E557CD500865440 /* MusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicPlayerView.swift; path = View/MusicPlayerView.swift; sourceTree = "<group>"; };
 		9518BE181E557CEA00865440 /* MusicPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicPlayerView.xib; path = View/MusicPlayerView.xib; sourceTree = "<group>"; };
@@ -92,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719B14791E65B1D600FCDC56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				719B147A1E65B1F800FCDC56 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9518BE251E55AD2500865440 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				9518BE371E55BB5D00865440 /* LocaionManager.swift */,
+				719B147C1E65B56000FCDC56 /* Server.swift */,
+				719B147E1E65BB6300FCDC56 /* WeatherAPI.swift */,
 				95E98D121E5C187E003DAB16 /* NetworkService.swift */,
 			);
 			name = Commons;
@@ -177,6 +193,7 @@
 				9518BE281E55B59A00865440 /* Model */,
 				9518BE261E55AD5300865440 /* ViewController */,
 				9518BE271E55AD6100865440 /* View */,
+				719B14791E65B1D600FCDC56 /* Extensions */,
 				9518BE361E55BB1F00865440 /* SupportFiles */,
 			);
 			path = "New Day";
@@ -345,8 +362,11 @@
 				9518BE171E557CD500865440 /* MusicPlayerView.swift in Sources */,
 				9573CF8E1E533033005DB358 /* AppDelegate.swift in Sources */,
 				9518BE351E55BB0E00865440 /* ViewController.swift in Sources */,
+				719B147D1E65B56000FCDC56 /* Server.swift in Sources */,
 				9518BE2A1E55B5E500865440 /* WeatherModel.swift in Sources */,
 				9518BE2C1E55B8E500865440 /* MusicModel.swift in Sources */,
+				719B147F1E65BB6300FCDC56 /* WeatherAPI.swift in Sources */,
+				719B147B1E65B1F800FCDC56 /* String+Extension.swift in Sources */,
 				95E98D1B1E5C2857003DAB16 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
