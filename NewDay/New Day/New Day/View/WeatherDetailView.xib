@@ -18,32 +18,32 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main_top_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="qfK-zK-aXX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnk-nh-PCa">
-                    <rect key="frame" x="30" y="64" width="73.5" height="51.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnk-nh-PCa">
+                    <rect key="frame" x="30" y="64" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <size key="shadowOffset" width="1" height="1"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwU-s0-iuj">
-                    <rect key="frame" x="30" y="145.5" width="70.5" height="45"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwU-s0-iuj">
+                    <rect key="frame" x="30" y="94" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <size key="shadowOffset" width="1" height="1"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年2月14日  农历正月十八" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXN-Rm-1FA">
-                    <rect key="frame" x="30" y="220.5" width="216.5" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXN-Rm-1FA">
+                    <rect key="frame" x="30" y="124" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <size key="shadowOffset" width="1" height="1"/>
                 </label>
-                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rlH-8V-uhV">
-                    <rect key="frame" x="278" y="67.5" width="67" height="45"/>
+                <stackView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rlH-8V-uhV">
+                    <rect key="frame" x="278" y="42" width="67" height="45"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sunshine" translatesAutoresizingMaskIntoConstraints="NO" id="Hmm-Ns-3G9">
                             <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -62,8 +62,8 @@
                         </label>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM2.5  62" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-xZ-gTU">
-                    <rect key="frame" x="271.5" y="157" width="73.5" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-xZ-gTU">
+                    <rect key="frame" x="345" y="94.5" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -91,12 +91,13 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="airQualityLabel" destination="VYC-xZ-gTU" id="Mg0-6h-d1d"/>
                 <outlet property="cityLabel" destination="Qnk-nh-PCa" id="SnN-BM-Lnr"/>
                 <outlet property="dateLabel" destination="HXN-Rm-1FA" id="qcM-po-7Bv"/>
+                <outlet property="humidityLabel" destination="VYC-xZ-gTU" id="6x3-jm-tAl"/>
                 <outlet property="temperatureLabel" destination="rwU-s0-iuj" id="WOW-WO-B5e"/>
                 <outlet property="weatherIcon" destination="Hmm-Ns-3G9" id="ToU-EN-gTh"/>
                 <outlet property="weatherLabel" destination="uBh-8n-cKJ" id="fhB-EL-dhY"/>
+                <outlet property="weatherStackView" destination="rlH-8V-uhV" id="RKn-ge-4Yf"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="-136"/>
         </view>

@@ -10,12 +10,13 @@ import UIKit
 
 class WeatherDetailView: UIView {
     
+    @IBOutlet weak var weatherStackView: UIStackView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var weatherLabel: UILabel!
-    @IBOutlet weak var airQualityLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
     
     var city: String? {
         didSet {
@@ -35,9 +36,9 @@ class WeatherDetailView: UIView {
         }
     }
     
-    var airQuality: String? {
+    var humidity: String? {
         didSet {
-            self.airQualityLabel.text = airQuality
+            self.humidityLabel.text = humidity
         }
     }
 
