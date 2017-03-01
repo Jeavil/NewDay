@@ -11,12 +11,13 @@ import CoreLocation
 
 class NetworkService: NSObject {
     
-    
     func requestSpecificCity(_ location:CLLocation, completionHanler: @escaping (CityModel) -> Void) {
         let latitude = location.coordinate.latitude
         let longtitude = location.coordinate.longitude
         
-        let url = URL(string: "https://restapi.amap.com/v3/geocode/regeo?key=8c29c5ca7eea8480e49a571ea73aea6d&location=\(longtitude),\(latitude)")!
+        guard let url = "https://restapi.amap.com/v3/geocode/regeo?key=8c29c5ca7eea8480e49a571ea73aea6d&location=\(longtitude),\(latitude)".URLValue else {
+            assertionFailure("The weather url must not be nil")
+            return }
         let request = URLRequest(url: url as URL)
         let configuration = URLSessionConfiguration.default
         let session  = URLSession(configuration:configuration)
@@ -31,13 +32,10 @@ class NetworkService: NSObject {
         task.resume()
     }
     
-    
     func requestWeatherInfo(_ city:String, completionHandle: @escaping(WeatherModel) -> Void) {
-        let urlStr = "https://restapi.amap.com/v3/weather/weatherInfo?key=8c29c5ca7eea8480e49a571ea73aea6d&city=\(city)".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
-        guard let url = URL(string:urlStr) else {
+        guard let url = "https://restapi.amap.com/v3/weather/weatherInfo?key=8c29c5ca7eea8480e49a571ea73aea6d&city=\(city)".URLValue else {
             assertionFailure("The weather url must not be nil")
-            return
-        }
+            return }
         let request = URLRequest(url: url as URL)
         let configuration = URLSessionConfiguration.default
         let session = URLSession(configuration:configuration)

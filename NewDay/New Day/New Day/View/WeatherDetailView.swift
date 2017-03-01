@@ -29,7 +29,7 @@ class WeatherDetailView: UIView {
     
     func addAttributeToTemperatureLabel(_ temperature: String) -> NSMutableAttributedString{
         let attriStr = NSMutableAttributedString(string:temperature)
-        attriStr.addAttribute(NSFontAttributeName, value: UIFont.init(name: "Avenir", size: 20) ?? "", range: NSMakeRange(3,temperature.characters.count))
+        attriStr.addAttribute(NSFontAttributeName, value: UIFont.init(name: "Avenir", size: 20) ?? "", range: NSMakeRange(1,temperature.characters.count - 1))
         return attriStr
     }
     
@@ -42,7 +42,7 @@ class WeatherDetailView: UIView {
     var temperature: String? {
         didSet {
             self.temperatureLabel.text = temperature
-            self.temperatureLabel.attributedText = self.addAttributeToTemperatureLabel(temperature!)
+            self.temperatureLabel.attributedText = self.addAttributeToTemperatureLabel(temperature ?? "")
         }
     }
     
