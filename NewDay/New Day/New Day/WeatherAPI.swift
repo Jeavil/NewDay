@@ -9,7 +9,7 @@
 import Foundation
 
 enum WeatherAPI: RawRepresentable {
-    case city(longtitude: String, latitude: String)
+    case city(longtitude: Double, latitude: Double)
     case weatherInfo(city: String)
     
     
