@@ -18,15 +18,6 @@ class WeatherDetailView: UIView {
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-      
-    }
-    
     func addAttributeToTemperatureLabel(_ temperature: String) -> NSMutableAttributedString{
         let attriStr = NSMutableAttributedString(string:temperature)
         attriStr.addAttribute(NSFontAttributeName, value: UIFont.init(name: "Avenir", size: 20) ?? "", range: NSMakeRange(1,temperature.characters.count - 1))

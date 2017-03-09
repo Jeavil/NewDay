@@ -47,15 +47,27 @@ class ViewController: UIViewController,LocationManagerDelegate {
     
     // LocationManagerDelegate
     func locationDidUpdate(location: CLLocation) {
-        if(location.coordinate.latitude != 0  && location.coordinate.longitude != 0 ){
-            networkService?.requestSpecificCity(location) { cityModel in
-                self.networkService?.requestWeatherInfo(cityModel.city) { weatherModel in
-                    DispatchQueue.main.async {
-                        self.updateWeatherView(weatherModel)
-                    }
-                }
+        guard location.coordinate.latitude != 0 && location.coordinate.longitude != 0 else {
+            return
+        }
+        
+        WeatherAPI.city(longtitude: location.coordinate.longitude, latitude: location.coordinate.latitude).request(with: nil) { result in
+            switch result {
+            case .success(let json):
+                NSLog("\(json)")
+            case .failure(let error):
+                NSLog("\(error)")
             }
         }
+            
+            
+//        networkService?.requestSpecificCity(location) { cityModel in
+//            self.networkService?.requestWeatherInfo(cityModel.city) { weatherModel in
+//                DispatchQueue.main.async {
+//                    self.updateWeatherView(weatherModel)
+//                }
+//            }
+//        }
     }
     
     func updateWeatherView(_ weatherInfo: WeatherModel) {
